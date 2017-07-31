@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>CSS3 Linear and Radial Repeating Gradients - Hongkiat.com</title>
+
+<!--  jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_nav/js/jquery.js"><\/script>')</script>
+
+<!-- demo scripts -->
+<link rel="stylesheet" href="style.css">
+
+<!-- nav script -->
+<script src="../_nav/js/nav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- nav meta -->
+<div class="demo-meta">
+	<h1 class="demo-title">CSS3 Linear and Radial Repeating Gradients</h1>
+	<p class="demo-desc">Go further with gradient colors. In this demo we extend CSS3 linear and radial gradients into repeating gradients. This demo also shows how to utilize this feature to create Paperline pattern.</p>
+</div>
+
+<!-- demo content -->
+<div class="wrapper">
+<section id="basic">
+<h3>Basic Repeating</h3>
+
+<h4>Linear</h4>
+<div class="gradient one">
+</div>
+<pre>.gradient {
+	background: -webkit-repeating-linear-gradient(0deg, #f9f9f9, #cccccc 20px);
+	background: -moz-repeating-linear-gradient(0deg, #f9f9f9, #cccccc 20px);
+	background: -o-repeating-linear-gradient(0deg, #f9f9f9, #cccccc 20px);
+	background: repeating-linear-gradient(0deg, #f9f9f9, #cccccc 20px);
+}</pre>
+
+<h4>Radial</h4>
+<div class="gradient two">
+</div>
+
+<pre>.gradient {
+	background: -webkit-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #cccccc 20px);
+	background: -moz-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #cccccc 20px);
+	background: -o-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #cccccc 20px);
+	background: repeating-radial-gradient(50% 50%, circle, #f9f9f9, #cccccc 20px);
+}</pre>
+</section>
+
+<section id="pattern">
+<h3>Creating Pattern</h3>
+
+<h4>Linear</h4>
+<div class="gradient three">
+</div>
+<pre>.gradient {
+	background: -webkit-repeating-linear-gradient(0deg, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: -moz-repeating-linear-gradient(0deg, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: -o-repeating-linear-gradient(0deg, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: repeating-linear-gradient(0deg, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+}</pre>
+
+<h4>Radial</h4>
+<div class="gradient four">
+</div>
+
+<pre>.gradient {
+	background: -webkit-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: -moz-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: -o-repeating-radial-gradient(50% 50%, circle, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+	background: repeating-radial-gradient(50% 50%, circle, #f9f9f9, #f9f9f9 20px, #cccccc 20px, #cccccc 40px);
+}</pre>
+</section>
+
+<section id="paperline">
+<h3>Creating Paperline</h3>
+<div class="gradient five">
+</div>
+<pre>
+.gradient {
+	background: -webkit-repeating-linear-gradient( -90deg, #f9f9f9, #f9f9f9 20px, #cccccc 21px);
+	background: -moz-repeating-linear-gradient( -90deg, #f9f9f9, #f9f9f9 20px, #cccccc 21px);
+	background: -o-repeating-linear-gradient( -90deg, #f9f9f9, #f9f9f9 20px, #cccccc 21px);
+	background: repeating-linear-gradient( -90deg, #f9f9f9, #f9f9f9 20px, #cccccc 21px);
+	background-size: 100% 21px;
+}
+.gradient:before {
+	content: "";
+	display: inline-block;
+	height: 500px;
+	width: 4px;
+	border-left: 4px double #FCA1A1;
+	position: relative;
+	left: 30px;
+}
+</pre>
+</section>
+</div>
+
+</body>
+</html>
